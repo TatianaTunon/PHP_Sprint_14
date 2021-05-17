@@ -8,7 +8,6 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-
 class AuthenticatedSessionController extends Controller
 {
     /**
@@ -29,15 +28,14 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request)
     {
-        //dd($request);
         $request->authenticate();
 
-        $request->session()->regenerate();
+        // $request->session()->regenerate();
 
-        return redirect()->route('dashboard')
-                 ->with(['user'=>Auth::user()]);
+        $token = Auth::user()->createToken('Personal Acces Token')->accessToken;
 
-        //return redirect()->intended(RouteServiceProvider::HOME);
+        return response()->json(['token' => $token], 200);
+        // return redirect()->intended(RouteServiceProvider::HOME);
     }
 
     /**
@@ -48,12 +46,15 @@ class AuthenticatedSessionController extends Controller
      */
     public function destroy(Request $request)
     {
-        Auth::guard('web')->logout();
+        $token = Auth::user()->token();
+        $token->revoke();
+        return response()->json([
+            'message' => 'Successfully logged out'
+        ]);
 
+        /*Auth::guard('web')->logout();
         $request->session()->invalidate();
-
         $request->session()->regenerateToken();
-
-        return redirect('/');
+        return redirect('/'); */
     }
 }

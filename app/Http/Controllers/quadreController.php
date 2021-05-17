@@ -53,5 +53,4 @@ class quadreController extends Controller
        return redirect()->route('quadres.index');
       
    }
- 
 }

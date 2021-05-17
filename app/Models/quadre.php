@@ -8,7 +8,6 @@ use App\Models\shop;
 
 class quadre extends Model
 {
-  
     use HasFactory;
     
     protected $primaryKey = 'id';

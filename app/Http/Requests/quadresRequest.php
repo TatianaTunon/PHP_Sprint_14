@@ -50,4 +50,5 @@ class quadresRequest extends FormRequest
             ];
            
         }
-    }
+    
+}

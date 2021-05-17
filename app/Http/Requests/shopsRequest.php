@@ -45,4 +45,3 @@ class shopsRequest extends FormRequest
            
         }
 }
-

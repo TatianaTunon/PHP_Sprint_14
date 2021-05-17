@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
-use Spatie\Permission\Models\Role;
+use App\Models\User;
+use App\Models\shop;
+use Illuminate\Support\Str;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,14 +16,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $admin = Role::create(['name'=>'admin']);
-        $user1 = Role::create(['name'=>'user1']);
-
         $admin = User::create([
             'name' => 'admin',
             'email' => 'admin@admin.com',
             'email_verified_at' => now(),
             'password' => bcrypt('password'),
+            'remember_token' => Str::random(10),
         ]);
 
         $user1= User::create([
@@ -31,13 +29,13 @@ class DatabaseSeeder extends Seeder
             'email' => 'tatianatunon@gmail.com',
             'email_verified_at' => now(),
             'password' => bcrypt('password'),
+            'remember_token' => Str::random(10),
         ]);
 
-        $admin->assignRole($admin->id);
-        $user1->assignRole($user1->id);
+        //$admin->assignRole($admin->id);
+        //$user1->assignRole($user1->id);
 
+        shop::factory(10)->create();
         User::factory(10)->create();
-
     }
-    
 }

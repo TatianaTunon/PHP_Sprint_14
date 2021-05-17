@@ -1,31 +1,17 @@
-@extends('layouts.head')
-@extends('layouts.footer')
-@extends('layouts.sidebar')
-
-<body class="animsition">
-    <div class="page-wrapper">
-    
-
-<!-- PAGE CONTAINER-->
-<div class="page-container2">
-<!-- HEADER DESKTOP-->
-<header class="header-desktop2">
-@include('layouts.header')
-</header>
-<!-- END HEADER DESKTOP-->
-
-<!-- BREADCRUMB-->
-<section class="au-breadcrumb m-t-75">
 <x-app-layout>
-    <x-slot name="header"></x-slot>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Dashboard') }}
+        </h2>
+    </x-slot>
+
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 bg-white border-b border-gray-200">
+                    You're logged in!
+                </div>
+            </div>
+        </div>
+    </div>
 </x-app-layout>
-</section>
-<!-- END BREADCRUMB-->
-<section class="au-breadcrumb m-t-75">
-</section>
-           
-            <!-- END STATISTIC-->
-
-        
-</body>
-

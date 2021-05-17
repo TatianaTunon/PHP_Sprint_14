@@ -23,5 +23,4 @@ class shop extends Model
         return $this->hasMany(quadre::class);
     }
 
- 
 }

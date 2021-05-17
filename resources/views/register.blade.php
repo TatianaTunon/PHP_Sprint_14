@@ -1,0 +1,63 @@
+@extends('layouts.head')
+@extends('layouts.footer')
+@extends('layouts.sidebar')
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body class="animsition">
+    <div class="page-wrapper">
+    <!-- PAGE CONTAINER-->
+    <div class="page-container mt-5">
+@include('layouts.header')
+</div>
+
+        <div class="page-content--bge5">
+        <div class="col-lg-10 offset-lg-2">
+            <div class="container">
+                <div class="login-wrap">
+                    <div class="login-content">
+                        <div class="logo mb-3">
+                            <div class="col-md-12 text-center">
+                                <h1>White Collar</h1>
+                            </div>
+                        </div>
+                        <div class="login-form">
+                        <auth-validation-errors class="mb-4" :errors="$errors" />
+                        <form method="POST" action="{{ route('register') }}">
+                            @csrf
+                            <div class="form-group">
+                                <label class="text-lg " for="name" :value="__('Name')">
+                                </label>
+                                    <input id="name" class="au-input au-input--full" type="text" name="name" placeholder="Username" :value="old('name')" required autofocus />
+                            </div>
+                            <div class="form-group">
+                                <label class="text-lg" for="email" :value="__('Email')"></label>
+                                    <input id="email" class="au-input au-input--full" type="email" name="email" placeholder="Email" :value="old('email')" required />
+                            </div>
+                            <div class="form-group">
+                                <label class="text-lg" for="password" :value="__('Password')"></label>
+                                    <input id="password" class="au-input au-input--full" type="password" name="password" placeholder="Password" required autocomplete="new-password" />
+                            </div>
+                            <div class="form-group">
+                                <label class="text-lg" for="password" :value="__('Password')"></label>
+                                    <input id="password_confirmation" class="au-input au-input--full" type="password" name="password_confirmation" placeholder="Password" required />
+                            </div>                             
+                            <div class="login-checkbox">
+                                <a class="underline text-mg text-black-600 hover:text-gray-900" href="{{ route('login') }}">
+                                </a>
+                            </div>
+                                <button class="au-btn au-btn--block au-btn--blue2 m-b-20" type="submit">{{ __('Register') }}</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+ 
+</body>
+
+</html>
