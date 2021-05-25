@@ -35,7 +35,7 @@ class AuthenticatedSessionController extends Controller
         $token = Auth::user()->createToken('Personal Acces Token')->accessToken;
 
         return response()->json(['token' => $token], 200);
-        // return redirect()->intended(RouteServiceProvider::HOME);
+        //return redirect()->intended(RouteServiceProvider::HOME);
     }
 
     /**

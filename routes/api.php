@@ -29,13 +29,13 @@ Route::post('login', [PassportController::class, 'login']);*/
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])
                 ->middleware('guest')
                 ->name('login');
-
+                
 Route::post('login', [AuthenticatedSessionController::class, 'store'])
                 ->middleware('guest');
 
 Route::middleware('auth:api')->group(function() {
-    Route::resource('shops', shopController::class);
-    Route::resource('quadres', quadreController::class);
+    //Route::resource('shops', shopController::class);
+    //Route::resource('quadres', quadreController::class);
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 });
 

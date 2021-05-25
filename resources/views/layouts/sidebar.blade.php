@@ -1,7 +1,7 @@
  <!-- MENU SIDEBAR-->
  <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="#">
+                <a href="{{ route('welcome') }}">
                     <img src="{!! asset('theme/images/whitecollar.png') !!}" alt="Cool Admin" />
                 </a>
             </div>

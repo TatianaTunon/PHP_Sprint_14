@@ -16,7 +16,6 @@ class shopController extends Controller
         //Modificación para el boton búsqueda shops
         $name = $request->get('buscar');
         $shops= shop::where('name','like',"%$name%")->paginate();
-        
         return view('shops/index', compact ('shops'));
      }
  

@@ -18,7 +18,7 @@ use App\Http\Controllers\quadreController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -27,11 +27,11 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 //CRUD shops
-//Route::resource('/shops', shopController::class);
+Route::resource('/shops', shopController::class);
 
 //Show
 Route::get('/shops/{id}/pictures', [shopController::class, 'show'])->name('shops.show');
   
 
 //CRUD quadres
-//Route::resource('/quadres', quadreController::class);
+Route::resource('/quadres', quadreController::class);
