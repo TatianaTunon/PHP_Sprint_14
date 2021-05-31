@@ -16,7 +16,7 @@
                             </div>
                         </div>
                         <div class="login-form">
-                        <form method="POST" action="{{ route('login') }}">
+                        <form method="POST" action="{{ route('custom.login') }}">
                             @csrf
                                 <div class="form-group">
                     

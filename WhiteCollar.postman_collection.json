@@ -1,278 +1,116 @@
 {
 	"info": {
-		"_postman_id": "cc450f44-bf0d-40a0-8ce4-728c35c5d261",
+		"_postman_id": "b402dad9-5776-4db5-8fe8-9b71a7e74673",
 		"name": "WhiteCollar",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "quadres",
-			"item": [
-				{
-					"name": "http://localhost/Whitecollar/public/quadres/",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost/Whitecollar/public/quadres/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"Whitecollar",
-								"public",
-								"quadres",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "http://localhost/Whitecollar/public/quadres",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNmM5YTkxM2YzNGRkN2Q4NDUyN2ZkZjU5YmE3NTlkZWJhODJhZmY1MWQzMWYwMzFjYTYwYzI5MjFlYTZkMTQ4M2Y2NDM0ZGQ2NzY4NGE5ZmEiLCJpYXQiOjE2MjExODEzNzYuMzE3Nzg3ODg1NjY1ODkzNTU0Njg3NSwibmJmIjoxNjIxMTgxMzc2LjMxNzc5NTAzODIyMzI2NjYwMTU2MjUsImV4cCI6MTY1MjcxNzM3Ni4zMDE5ODU5NzkwODAyMDAxOTUzMTI1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.lhCJJdL33labq_YYa3ozxOx6B9WCVkdxAIt2mSnzYKXiyQNWiFtRf6TL4HHdtPwhcersyRcgN8P9MkulQ5MoLulKQCDXJM1NAqEws9V197fEcn53FRhWIlTlBotUOo9MYgJjSC8Z_-fAGS2__56OYNwsWMwHWxmFQu7ZbnpUJzgCPias4Ptm0q-KP0Gv7gyY1TfPMk5ddpquwE6zMnE4I6c1QGb94Wjo1JTOk1KnqEWavvfnK2zE8e61J95BS-VswH3qZJvk0x1wX9koQETcJCps7GZ-MT1BPJrYP8IyotIsHW84Fkls3thfMPQ5wRQ2W6uTKz2rBGhXeVB5-ecOWDw76nVJeZC2IZzuzNNw7zZHMjDdl9t5uTRkQrZlucD0f5F5tvlDKLVccVIbLaqLHgZMTIVu4Y0kb6ZlWavvpDN65DNAPiWthq4xLc2oZxgAuy2wgQ92bn59I8L18rbrzlXdjXXVxAzpstGiMj_ZVjHUuGqSAYynp1HGW-SyhOTsnHDzK5qG9wWICByF4jS0v5cdwOs2BxMvUl4Pg0pvpLcTAQNytLpNg6mLwdkFM5LdK0oshsirgKb_xkKC2rblubXg_0T3rXx7zXKYvnQCna8ILfhkJVI2Qjl9zpdS-gJJ0_FLYr_4lLURzpWGUo-mdBFxQ4Rb3l2vrK4Q0_JgMZc",
-									"type": "string"
-								}
-							]
-						},
-						"method": "PUT",
-						"header": [],
-						"url": {
-							"raw": "http://localhost/Whitecollar/public/quadres/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"Whitecollar",
-								"public",
-								"quadres",
-								""
-							]
-						},
-						"description": "create"
-					},
-					"response": []
-				},
-				{
-					"name": "http://localhost/Whitecollar/public/quadres/",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost/Whitecollar/public/quadres/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"Whitecollar",
-								"public",
-								"quadres",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "http://localhost/Whitecollar/public/quadres",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://localhost/Whitecollar/public/quadres/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"Whitecollar",
-								"public",
-								"quadres",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "http://localhost/Whitecollar/public/quadres/",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "http://localhost/Whitecollar/public/quadres/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"Whitecollar",
-								"public",
-								"quadres",
-								""
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "shops",
-			"item": [
-				{
-					"name": "http://localhost/Whitecollar/public/shops",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost/Whitecollar/public/shops",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"Whitecollar",
-								"public",
-								"shops"
-							]
-						},
-						"description": "index"
-					},
-					"response": []
-				},
-				{
-					"name": "http://localhost/Whitecollar/public/shops/",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"url": {
-							"raw": "http://localhost/Whitecollar/public/shops/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"Whitecollar",
-								"public",
-								"shops",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "http://localhost/Whitecollar/public/shops/",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "http://localhost/Whitecollar/public/shops/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"Whitecollar",
-								"public",
-								"shops",
-								""
-							]
-						},
-						"description": "POST /shops/"
-					},
-					"response": []
-				},
-				{
-					"name": "http://localhost/Whitecollar/public/shops/create",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost/Whitecollar/public/shops/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"Whitecollar",
-								"public",
-								"shops",
-								""
-							]
-						},
-						"description": "create"
-					},
-					"response": []
-				},
-				{
-					"name": "http://localhost/Whitecollar/public/shops/",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNmM5YTkxM2YzNGRkN2Q4NDUyN2ZkZjU5YmE3NTlkZWJhODJhZmY1MWQzMWYwMzFjYTYwYzI5MjFlYTZkMTQ4M2Y2NDM0ZGQ2NzY4NGE5ZmEiLCJpYXQiOjE2MjExODEzNzYuMzE3Nzg3ODg1NjY1ODkzNTU0Njg3NSwibmJmIjoxNjIxMTgxMzc2LjMxNzc5NTAzODIyMzI2NjYwMTU2MjUsImV4cCI6MTY1MjcxNzM3Ni4zMDE5ODU5NzkwODAyMDAxOTUzMTI1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.lhCJJdL33labq_YYa3ozxOx6B9WCVkdxAIt2mSnzYKXiyQNWiFtRf6TL4HHdtPwhcersyRcgN8P9MkulQ5MoLulKQCDXJM1NAqEws9V197fEcn53FRhWIlTlBotUOo9MYgJjSC8Z_-fAGS2__56OYNwsWMwHWxmFQu7ZbnpUJzgCPias4Ptm0q-KP0Gv7gyY1TfPMk5ddpquwE6zMnE4I6c1QGb94Wjo1JTOk1KnqEWavvfnK2zE8e61J95BS-VswH3qZJvk0x1wX9koQETcJCps7GZ-MT1BPJrYP8IyotIsHW84Fkls3thfMPQ5wRQ2W6uTKz2rBGhXeVB5-ecOWDw76nVJeZC2IZzuzNNw7zZHMjDdl9t5uTRkQrZlucD0f5F5tvlDKLVccVIbLaqLHgZMTIVu4Y0kb6ZlWavvpDN65DNAPiWthq4xLc2oZxgAuy2wgQ92bn59I8L18rbrzlXdjXXVxAzpstGiMj_ZVjHUuGqSAYynp1HGW-SyhOTsnHDzK5qG9wWICByF4jS0v5cdwOs2BxMvUl4Pg0pvpLcTAQNytLpNg6mLwdkFM5LdK0oshsirgKb_xkKC2rblubXg_0T3rXx7zXKYvnQCna8ILfhkJVI2Qjl9zpdS-gJJ0_FLYr_4lLURzpWGUo-mdBFxQ4Rb3l2vrK4Q0_JgMZc",
-									"type": "string"
-								}
-							]
-						},
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://localhost/Whitecollar/public/shops/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"Whitecollar",
-								"public",
-								"shops",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "http://localhost/Whitecollar/public/shops/1",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost/Whitecollar/public/shops/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"Whitecollar",
-								"public",
-								"shops",
-								"1"
-							]
-						},
-						"description": "/shops/{ID}"
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "http://localhost/Whitecollar/public/api/login",
+			"name": "http://localhost/Whitecollar/public/api/login?email=admin@admin.com&password=password",
 			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Whitecollar/public/api/login?email=admin@admin.com&password=password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Whitecollar",
+						"public",
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "admin@admin.com"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/Whitecollar/public/api/quadres",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiM2VkNWQ0NzBiMDkwYzY4ZGJmMjEwYTgzOGExZWUxZjI3ZTlkZTFiZTdiZWFhYzM2OGY0NDJjMjRjMGU3NWNhMjIyNjU1MTA5YjJkNmU2OGMiLCJpYXQiOjE2MjI0NzU2MTYuODkzMzQ3OTc4NTkxOTE4OTQ1MzEyNSwibmJmIjoxNjIyNDc1NjE2Ljg5MzM1MzkzOTA1NjM5NjQ4NDM3NSwiZXhwIjoxNjU0MDExNjE2Ljg3OTYxNzkyOTQ1ODYxODE2NDA2MjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.G8N5ekGAWmXeV71BGUPgdpD0eRzbtyCPydh9DHrimn1i30Gc9B5KOJ4OrAIAv3RYfrA-_becc6bWl6FkgwFaI6fASWnXZQENAdOnZKAhMZ6Y32pmqCo-jwXornRcVxLeCvJlHOEAvKEsclunzxetm3CA3apvF-vxhcMrO1JgpiEl1XV3Ka-G1l-BxiyJ1SLHR5nYkxReX9bnGkPXiNr9HfnFlMEgswPqCUf4BaTqRQ3Q16s5BeNt6lqz0ZFHLpnw9lApcihu3-Bj6v2xkf1J3pM2StKpYLSVS7kXJHb_w6oT1bWNEa8c06A2BZ8Xv7FM48K_Q6Xz-qMIgxicqR_b_G0kylPc93kREN1iUtU7K-vuWCcCPet3fOWGairL3juTFiSxjSB-xLzDibaBvvXSV57SM9na3cp6Fpo3AvIwzX29NlWcsaryZo-1QDUQTJwjjhkiIXAOP52J5uESbWGXQ3nP9KRYiLj5sjUV51TSPs_b2ZNRzB5T5MbrjAuyAF7QRLVeC_jgJe0aXnrcMMjtmGVqAQQGjpi2GoGd1ef8PAGDb5vkJf9QUgTkCabWqY0WA3rFIEglLwNHwQSh-px52OrFD6NtP8ewgu20NSx9Zt2IfLV0TPCqOs9D-4ipcCZ-jKzR08DcK_Tj3I0benoxqDiI9H2P4txWgqHsz3aqBUs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Whitecollar/public/api/shops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Whitecollar",
+						"public",
+						"api",
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/Whitecollar/public/api/quadres",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiM2VkNWQ0NzBiMDkwYzY4ZGJmMjEwYTgzOGExZWUxZjI3ZTlkZTFiZTdiZWFhYzM2OGY0NDJjMjRjMGU3NWNhMjIyNjU1MTA5YjJkNmU2OGMiLCJpYXQiOjE2MjI0NzU2MTYuODkzMzQ3OTc4NTkxOTE4OTQ1MzEyNSwibmJmIjoxNjIyNDc1NjE2Ljg5MzM1MzkzOTA1NjM5NjQ4NDM3NSwiZXhwIjoxNjU0MDExNjE2Ljg3OTYxNzkyOTQ1ODYxODE2NDA2MjUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.G8N5ekGAWmXeV71BGUPgdpD0eRzbtyCPydh9DHrimn1i30Gc9B5KOJ4OrAIAv3RYfrA-_becc6bWl6FkgwFaI6fASWnXZQENAdOnZKAhMZ6Y32pmqCo-jwXornRcVxLeCvJlHOEAvKEsclunzxetm3CA3apvF-vxhcMrO1JgpiEl1XV3Ka-G1l-BxiyJ1SLHR5nYkxReX9bnGkPXiNr9HfnFlMEgswPqCUf4BaTqRQ3Q16s5BeNt6lqz0ZFHLpnw9lApcihu3-Bj6v2xkf1J3pM2StKpYLSVS7kXJHb_w6oT1bWNEa8c06A2BZ8Xv7FM48K_Q6Xz-qMIgxicqR_b_G0kylPc93kREN1iUtU7K-vuWCcCPet3fOWGairL3juTFiSxjSB-xLzDibaBvvXSV57SM9na3cp6Fpo3AvIwzX29NlWcsaryZo-1QDUQTJwjjhkiIXAOP52J5uESbWGXQ3nP9KRYiLj5sjUV51TSPs_b2ZNRzB5T5MbrjAuyAF7QRLVeC_jgJe0aXnrcMMjtmGVqAQQGjpi2GoGd1ef8PAGDb5vkJf9QUgTkCabWqY0WA3rFIEglLwNHwQSh-px52OrFD6NtP8ewgu20NSx9Zt2IfLV0TPCqOs9D-4ipcCZ-jKzR08DcK_Tj3I0benoxqDiI9H2P4txWgqHsz3aqBUs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Whitecollar/public/api/quadres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Whitecollar",
+						"public",
+						"api",
+						"quadres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/Whitecollar/public/api/logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiZGI5ZjExNTI0NjBiMDNkY2I2ZjczZDhlZmMxZjJjNzQ1N2FkZDg3NjlmYTI1ZTcxOTYzMmFiOTVjY2Y1ZmE5ZDRhM2ZlOGFlYzZkYmE4YjEiLCJpYXQiOjE2MjI0NzMzMDAuODM0NzUzOTkwMTczMzM5ODQzNzUsIm5iZiI6MTYyMjQ3MzMwMC44MzQ3NTk5NTA2Mzc4MTczODI4MTI1LCJleHAiOjE2NTQwMDkzMDAuODIwNDgyOTY5Mjg0MDU3NjE3MTg3NSwic3ViIjoiMSIsInNjb3BlcyI6W119.oohnCsGeZ-gpFReRKPvRmDiNIlHQUfKT4xuEAw4qC71hnm0TIBLsrwlIyKzPxdkNZqkzB4qGcJeMeQHfAEn-YqtQ5pHMGcM5y2HZ1zhJpsipKt4OYp6G7X2zI75Hkon2WxUQ8uT4M0k3R04YHRBorzOoZCmmoRR3zwMBGzvqKO8fXoqb-_CU5X2kCPlLdnwK6IwoKRiPJjRpRK6o7jm4cN8EcHqt41gWHMfg4L6VEUBs3xukSbM8hddVYN58JFxKzWCFHhjEFnitsQ4B32GWZsKLJNgBWi2hWLr8W7cLUN5AatlGRgPOovr0nEPz8QR1zYWkiZpqdVlob5yukb1V09aEWO6bggRD4mHb0DIDbjhVc0gF-b4EgKDOAiZaWpVG9c07EFqsnOVa7bBxGlskJ-m5yrWuuMXvudRU5LtFsSrZMaG4IZzwdV1luAfL1V7COztTVNEMsdf5xKSK7KXSWYneDaXhMZdBnH63C-EKvXH1NdrCT2ilAIIH9mDT_a56A9I5AlUJvErGQCBiVEmg_Nfx-GjVpihUK3cCtsvFFnbqsmbuhMI5ZTHG0CeLEjdC1ebq81Wx6k9LuVNzkgi-0sXQfLpPVPWpolN1BLI3rIlDJ70KP9F5fDh1vZCMNKUqdA8LxMYvvFYq2ep99_VLe6n6P7UARBDBhor8-GotVkY",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -291,7 +129,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost/Whitecollar/public/api/login",
+					"raw": "http://localhost/Whitecollar/public/api/logout",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -300,10 +138,9 @@
 						"Whitecollar",
 						"public",
 						"api",
-						"login"
+						"logout"
 					]
-				},
-				"description": "login"
+				}
 			},
 			"response": []
 		}
